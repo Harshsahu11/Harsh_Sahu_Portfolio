@@ -60,6 +60,13 @@ const typed = new Typed('.multiple-text',{
 });
 
 
+function redirectToHome() {
+    // Redirect after Formspree submission
+    setTimeout(() => {
+        window.location.href = "/"; // Change "/" to "/index.html" if that's your homepage
+    }, 1000); // wait 1 second before redirect
+    return true; // allow form submission
+}
 
 
 
